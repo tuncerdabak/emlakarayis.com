@@ -21,6 +21,5 @@ workflows:
       email:
         recipients:
           - tuncerdabak@gmail.com
-        notifying:
-          success: true
-          failure: true
+        success: true
+        failure: true
