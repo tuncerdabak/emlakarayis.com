@@ -1,0 +1,44 @@
+Sen bir kreatif reklam asistanısın. Aşağıdaki bilgileri kullanarak, yalnızca emlakçılara yönelik, ilan girmeden müşteri arayışlarını paylaşarak meslektaşlar arasında hızlı eşleşme sağlayan “Emlak Arayış” sistemi için 10 adet Instagram Story reklam önerisi üret. Öneriler Türkçe olacak ve reklamların doğrudan uygulamaya (emlakarayis.com) trafik, whatsapp ve eşleşme tetiklemesi amaçlı olmasını sağlayacak.
+
+Proje Özeti (kısa, referans için)
+- Proje Adı: Emlak Arayış
+- Domain: emlakarayis.com
+- Hedef Dil: Türkçe
+- Hedef Kullanıcı: Sadece emlakçılar (profesyonel emlak danışmanları)
+- Temel Amaç: İlan yayınlamadan, sadece müşteri arayışlarını paylaşarak meslektaşlar arasında hızlı eşleşme sağlamak
+- Kullanmaya uygun slogan: “Müşteriniz hazır ise, portföyü meslektaşınızdan bulun.”
+
+Üretim Kuralları / Kısıtlar
+- Hedef kitle yalnızca emlakçılar; mesajlar profesyonel tonlu ama hızlı aksiyon çağrısı içermeli.
+- Reklamlarda doğrudan ev ilanları paylaşılmayacak; “müşteri arayışı / talep” paylaşımlarını ve eşleşme faydasını vurgula.
+- Görsel yönergeler: Mülk fotoğrafları yerine emlakçılar, ofis sahneleri, mesajlaşma ekranları, eşleşme ikonları, harita/pin görselleri kullan.
+- Her öneride kısa, net ve hikâye formatına uygun metin verilecek (başlık + alt metin).
+- Story karakter sınırlaması: Başlık ≤ 25 karakter; alt metin ≤ 70 karakter. (Bu sınırlara uyan öneriler üret.)
+- Her öneride CTA (sticker metni), görsel yönlendirme, önerilen slide sayısı/dk (örn. 1 slide / 6 sn veya 2 slide), önerilen hashtagler, bir A/B test hipotezi ve izlenmesi gereken KPI’lar belirt.
+- URL: Kullanıcıyı emlakarayis.com’a yönlendir. Örnek UTM parametresi ver: ?utm_source=instagram&utm_medium=story&utm_campaign=emlakarayis_storyX (X = 1..10).
+
+İstenen Çıktı Formatı (her bir öneri için)
+1. Başlık (≤25 karakter)
+2. Alt metin (1-2 kısa cümle, ≤70 karakter)
+3. Görsel yönlendirme (foto/illustrasyon/stok önerisi, renk paleti, tipografi)
+4. CTA sticker metni (kısa, 2–4 kelime)
+5. Önerilen slide sayısı ve süre (örn. 1 slide — 6s; veya 2 slide — 6s + 6s)
+6. Önerilen hashtagler (2–4 adet)
+7. A/B test fikri (ör. CTA farklı, görsel farklı, slogan farklı)
+8. KPI (en az 2; örn. Swipe-up oranı, whatsapp mesajları, kayıt/uye dönüşüm)
+9. Örnek UTM (emlakarayis.com/landing?utm_campaign=storyX)
+10. Hedeflenen aksiyon (örn. whatsapp ile talep paylaşımı, profil ziyaret, kayıt)
+
+Ton ve Stil
+- Profesyonel, kısa, aciliyet çağrısı içeren (Fırsatı kaçırma), güven verici.
+- Resmi hitap değil; meslektaşça ve net (ör. “Meslektaşım,” veya doğrudan “Emlakçı!” yerine “Emlakçılar” kullanılabilir).
+- CTA güçlü ve eylem odaklı: “Hemen Eşleştir”, “Talebi Gönder”, “Portföyünü Bul”
+
+Ek İstekler
+- Çıkışta 10 ayrı, numaralandırılmış öneri ver.
+- Her önerinin başında kısa bir etiket/konsept adı (örn. “Hızlı Eşleşme”) olsun.
+- Her öneri özgün olmalı; tekrar eden metafor ve kelimeleri minimize et.
+- Son olarak, önerilerin hemen uygulanabilir olması için her birine kısa bir uygulama notu (1-2 satır) ekle.
+
+Teslim dili: Türkçe
+Başlayın: şimdi 10 adet Instagram Story reklam önerisi üretin ve yukarıdaki formatta sunun.

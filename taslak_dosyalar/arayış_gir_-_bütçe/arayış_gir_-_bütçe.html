@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arayış Platformu - Bütçe Girişi</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800;900&amp;family=Noto+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for cleaner look if needed */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 4px;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-[#0d121b] dark:text-white antialiased min-h-screen flex flex-col overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-[#f8f9fc] dark:bg-[#101622] border-b border-[#e7ebf3] dark:border-gray-800 px-4 sm:px-10 py-3">
+<div class="max-w-[1280px] mx-auto flex items-center justify-between">
+<div class="flex items-center gap-4 text-[#0d121b] dark:text-white">
+<div class="size-8 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">real_estate_agent</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Arayış Platformu</h2>
+</div>
+<div class="flex items-center gap-4 sm:gap-8">
+<button class="p-2 text-gray-500 hover:text-primary transition-colors dark:text-gray-400">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-white dark:border-gray-700 shadow-sm cursor-pointer" data-alt="User profile avatar showing a smiling professional" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBOIWJgPaT1DV38lHNE-6EfuC1M3b_R3thvJaZ9i7lJyVI7chVrXPztOjt2_Ocjt_IQ-dGUEbhdMduE26RUied_baL-ez_4_FZf9H68A0L8aJlQM56K_K-OPrkhgyGDC7NHManON4MODKKNlx_Ju1KO0eLzlTAV5XujXDOlapaaTAU_CaxgxxZc3uml3A4elMr5V1V6oSNiOfkTesSRiEVeRJQiTGgveR2V83wD_udFiWYJHuxMfDqT6nR5uyxPPa3HUba1HW-a82qY");'>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col items-center py-8 sm:py-12 px-4">
+<div class="w-full max-w-[800px] flex flex-col gap-10">
+<!-- Progress Bar Section -->
+<div class="flex flex-col gap-3">
+<div class="flex gap-6 justify-between items-end">
+<p class="text-[#0d121b] dark:text-gray-100 text-sm font-semibold uppercase tracking-wide text-opacity-70">Adım 4/6: Bütçe</p>
+<p class="text-primary font-bold text-sm">66%</p>
+</div>
+<div class="h-2 w-full rounded-full bg-[#cfd7e7] dark:bg-gray-800 overflow-hidden">
+<div class="h-full rounded-full bg-primary transition-all duration-500 ease-out" style="width: 66%;"></div>
+</div>
+</div>
+<!-- Page Heading -->
+<div class="flex flex-col gap-3 text-center sm:text-left animate-fade-in-up">
+<h1 class="text-[#0d121b] dark:text-white text-4xl sm:text-5xl font-black leading-tight tracking-[-0.033em]">
+                    Bütçeniz nedir?
+                </h1>
+<p class="text-[#4c669a] dark:text-gray-400 text-lg font-normal leading-relaxed max-w-2xl">
+                    Müşterinizin bu arayış için ayırdığı maksimum bütçe nedir? Bu bilgi eşleşmelerde filtre olarak kullanılacaktır.
+                </p>
+</div>
+<!-- Budget Input Form -->
+<div class="w-full bg-white dark:bg-[#1a2230] rounded-2xl p-8 sm:p-12 shadow-sm border border-[#e7ebf3] dark:border-gray-800 mt-2">
+<label class="flex flex-col gap-6 w-full">
+<span class="text-[#0d121b] dark:text-gray-200 text-base font-medium leading-normal">Maksimum Tutar</span>
+<div class="flex items-center gap-4 sm:gap-6">
+<div class="relative flex-1 group">
+<!-- Input Wrapper -->
+<input autofocus="" class="form-input block w-full rounded-xl border-2 border-[#cfd7e7] dark:border-gray-700 bg-[#f8f9fc] dark:bg-[#101622] text-[#0d121b] dark:text-white placeholder:text-[#9aa2b1] dark:placeholder:text-gray-600 h-20 sm:h-24 px-6 sm:px-8 text-3xl sm:text-5xl font-bold tracking-tight text-right focus:border-primary focus:ring-4 focus:ring-primary/10 dark:focus:border-primary transition-all duration-200 outline-none shadow-sm" placeholder="0" type="text" value="5.500.000"/>
+<!-- Helper / Focus visual cue if needed -->
+</div>
+<!-- Currency Symbol Outside -->
+<span class="text-3xl sm:text-4xl font-black text-[#0d121b] dark:text-white opacity-80 shrink-0">TL</span>
+</div>
+<p class="text-[#4c669a] dark:text-gray-500 text-sm font-normal flex items-center gap-2">
+<span class="material-symbols-outlined text-lg">info</span>
+                        Sadece en yüksek tutarı giriniz, kuruş hanesi kullanmayınız.
+                    </p>
+</label>
+</div>
+<!-- Navigation Actions -->
+<div class="flex items-center justify-between pt-6 border-t border-transparent sm:border-[#e7ebf3] sm:dark:border-gray-800">
+<button class="group flex items-center gap-2 px-6 py-3 rounded-lg text-[#4c669a] dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-[#0d121b] dark:hover:text-white transition-all font-medium text-lg">
+<span class="material-symbols-outlined transition-transform group-hover:-translate-x-1">arrow_back</span>
+                    Geri
+                </button>
+<button class="group flex items-center gap-3 px-8 py-4 rounded-xl bg-primary text-white font-bold text-lg shadow-lg shadow-primary/30 hover:bg-blue-700 hover:shadow-primary/50 hover:translate-y-[-1px] transition-all">
+                    Devam Et
+                    <span class="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
+</button>
+</div>
+</div>
+</main>
+</body></html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EmlakAsistanı - Konum Girişi</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#135bec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#101622",
+              "surface-light": "#ffffff",
+              "surface-dark": "#1a2233",
+              "border-light": "#e7ebf3",
+              "border-dark": "#2a3447",
+              "text-main-light": "#0d121b",
+              "text-main-dark": "#f0f4f8",
+              "text-sub-light": "#4c669a",
+              "text-sub-dark": "#94a3b8",
+            },
+            fontFamily: {
+              "display": ["Public Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 w-full border-b border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark shadow-sm">
+<div class="px-6 lg:px-40 flex h-16 items-center justify-between">
+<div class="flex items-center gap-4 text-text-main-light dark:text-text-main-dark">
+<div class="size-8 text-primary">
+<svg class="size-full" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">EmlakAsistanı</h2>
+</div>
+<!-- Desktop Menu -->
+<nav class="hidden md:flex flex-1 justify-end gap-8 items-center">
+<div class="flex items-center gap-6">
+<a class="text-text-main-light dark:text-text-main-dark text-sm font-medium hover:text-primary transition-colors" href="#">Arayışlar</a>
+<a class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium hover:text-primary transition-colors" href="#">İlanlar</a>
+<a class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium hover:text-primary transition-colors" href="#">Mesajlar</a>
+<a class="text-text-sub-light dark:text-text-sub-dark text-sm font-medium hover:text-primary transition-colors" href="#">Profilim</a>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-9 border border-border-light dark:border-border-dark" data-alt="User profile avatar placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBofiTlgVv7gi6qAndvgKKAtDHvYYO_XL1mo3W3r5eULQIqOuGH_unHxb6Tnvjoibb1GeV4NE9xsqub6cmZ2q-rixIAz4BGKlvfCH2hp4dXu4ePc4sP75zYRz-mkQANbfi5DjBdNS9-GImAuCVDEmgR5nq6kmdmjuhZVEtFKtZgnfiAdLEfPST8li61Tga6URnEI5w7IfzHWqrw4pKvhzq34SYWXVyofcQHOAvbmpSadSgmcFf3YDlYxsYgCAI75Au5tF_t62cbS8CR");'></div>
+</nav>
+<!-- Mobile Menu Icon (Visual Only) -->
+<div class="md:hidden text-text-main-light dark:text-text-main-dark">
+<span class="material-symbols-outlined">menu</span>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center py-8 lg:py-12 px-4">
+<!-- Main Content Container -->
+<div class="w-full max-w-[800px] flex flex-col gap-6">
+<!-- Page Header & Title -->
+<div class="flex flex-col gap-2 text-center md:text-left">
+<h1 class="text-text-main-light dark:text-text-main-dark text-2xl md:text-3xl font-bold leading-tight">Konum Bilgileri</h1>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm md:text-base">Müşterinizin arayışta olduğu bölgeyi belirtin. (Adım 3/4)</p>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-light dark:bg-surface-dark p-4 rounded-xl shadow-sm border border-border-light dark:border-border-dark">
+<div class="flex flex-col gap-3">
+<div class="flex gap-6 justify-between items-center">
+<p class="text-text-main-light dark:text-text-main-dark text-sm font-semibold">Konum Seçimi</p>
+<span class="text-text-sub-light dark:text-text-sub-dark text-xs font-medium bg-background-light dark:bg-background-dark px-2 py-1 rounded">3. Adım</span>
+</div>
+<div class="h-2 w-full rounded-full bg-background-light dark:bg-[#2a3447] overflow-hidden">
+<div class="h-full rounded-full bg-primary transition-all duration-500 ease-out" style="width: 75%;"></div>
+</div>
+</div>
+</div>
+<!-- Form Card -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-border-light dark:border-border-dark p-6 md:p-8">
+<form class="flex flex-col gap-6">
+<!-- City Selection -->
+<div class="flex flex-col gap-2">
+<label class="text-text-main-light dark:text-text-main-dark text-sm font-semibold flex items-center gap-1" for="city">
+                            İl
+                            <span class="text-red-500">*</span>
+</label>
+<div class="relative">
+<select class="appearance-none w-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-text-main-light dark:text-text-main-dark text-base rounded-lg h-12 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors cursor-pointer" id="city">
+<option disabled="" selected="" value="">Şehir Seçiniz</option>
+<option value="istanbul">İstanbul</option>
+<option value="ankara">Ankara</option>
+<option value="izmir">İzmir</option>
+<option value="bursa">Bursa</option>
+<option value="antalya">Antalya</option>
+</select>
+<div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-text-sub-light dark:text-text-sub-dark">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+<!-- District & Neighborhood Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- District Input -->
+<div class="flex flex-col gap-2">
+<label class="text-text-main-light dark:text-text-main-dark text-sm font-semibold flex items-center gap-1" for="district">
+                                İlçe
+                                <span class="text-text-sub-light dark:text-text-sub-dark font-normal text-xs ml-auto">(Çoklu giriş için virgül kullanın)</span>
+</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-text-sub-light dark:text-text-sub-dark">
+<span class="material-symbols-outlined text-[20px]">location_on</span>
+</div>
+<input class="w-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-text-main-light dark:text-text-main-dark placeholder:text-text-sub-light dark:placeholder:text-text-sub-dark text-base rounded-lg h-12 pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors" id="district" placeholder="Örn: Kadıköy, Ataşehir" type="text"/>
+</div>
+</div>
+<!-- Neighborhood Input -->
+<div class="flex flex-col gap-2">
+<label class="text-text-main-light dark:text-text-main-dark text-sm font-semibold flex items-center gap-1" for="neighborhood">
+                                Mahalle
+                                <span class="text-text-sub-light dark:text-text-sub-dark font-normal text-xs ml-auto">(Opsiyonel)</span>
+</label>
+<div class="relative">
+<div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-text-sub-light dark:text-text-sub-dark">
+<span class="material-symbols-outlined text-[20px]">holiday_village</span>
+</div>
+<input class="w-full bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark text-text-main-light dark:text-text-main-dark placeholder:text-text-sub-light dark:placeholder:text-text-sub-dark text-base rounded-lg h-12 pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors" id="neighborhood" placeholder="Örn: Fenerbahçe, Moda" type="text"/>
+</div>
+</div>
+</div>
+<!-- Map Preview (Visual Hint) -->
+<div class="w-full h-40 bg-background-light dark:bg-background-dark rounded-lg overflow-hidden relative border border-border-light dark:border-border-dark mt-2 group cursor-pointer">
+<img class="w-full h-full object-cover opacity-60 group-hover:opacity-70 transition-opacity" data-alt="Abstract blurry map background representing location selection" data-location="Istanbul" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0lLJVfRqWAFJHNEYkaMqzdMvQjHNFWjyYq33tggcnsp6yvlDTY5iviRVwe30tfP0zncFqfVF7tdOU8ypm4E_BhFG7dv6kquPUIP3I-nlGMvGtkPBtGEz0HnNZVvr614DDpYDoZblJWkpElY0XbOXH3nWDIypjb2-Y6t5f-wYM26__Jg4tk-v_kT1AD2bBV4M1wd5DnbdIsUACWO6T-jZ8GYVMJj9oBlRJ3YdUitvgYQkJ0TN0mCoogrPESNgBAhm71J_5zAcXWnRr"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center">
+<div class="bg-surface-light dark:bg-surface-dark/90 backdrop-blur-sm p-3 rounded-full shadow-sm text-primary mb-2">
+<span class="material-symbols-outlined">map</span>
+</div>
+<p class="text-text-main-light dark:text-text-main-dark font-medium text-sm bg-surface-light/80 dark:bg-surface-dark/80 px-3 py-1 rounded-full backdrop-blur-sm">Haritadan Seç (Yakında)</p>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center justify-between pt-6 border-t border-border-light dark:border-border-dark mt-2">
+<button class="flex items-center gap-2 px-6 h-12 rounded-lg text-text-sub-light dark:text-text-sub-dark font-medium hover:bg-background-light dark:hover:bg-background-dark transition-colors focus:outline-none focus:ring-2 focus:ring-primary/20" type="button">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+                            Geri
+                        </button>
+<button class="flex items-center gap-2 px-8 h-12 bg-primary hover:bg-primary/90 text-white font-medium rounded-lg shadow-lg shadow-primary/30 transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary dark:focus:ring-offset-surface-dark" type="button">
+                            Devam Et
+                            <span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- Helper Text -->
+<div class="flex gap-3 px-2">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">info</span>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm leading-relaxed">
+                    Birden fazla ilçe veya mahalle girmek için her bölge adından sonra virgül (,) koyarak ayırabilirsiniz. Sistem otomatik olarak bölgeleri tanıyacaktır.
+                </p>
+</div>
+</div>
+</main>
+</body></html>

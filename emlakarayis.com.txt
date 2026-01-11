@@ -1,0 +1,323 @@
+Proje Adı: Emlak Arayış 
+Domain: emlakarayis.com 
+Dil: Türkçe 
+Hedef Cihaz: %99 Mobil (Responsive, Mobile-first) 
+Hedef Kullanıcı: Sadece emlakçılar 
+Amaç: İlan girmeden, sadece müşteri arayışlarını paylaşarak meslektaşlar arası hızlı eşleşme sağlamak
+
+Müşteriniz Hazır ise, Portföyü Meslektaşınızdan Bulun.
+
+GENEL TASARIM PRENSİPLERİ
+Mobile-first tasarım
+
+Büyük dokunmatik butonlar
+
+Tek elle kullanım
+
+Minimum metin, maksimum netlik
+
+Güven veren sade renk paleti (lacivert / mavi tonları)
+
+Karmaşık menü yok
+
+Her ekranda tek ana aksiyon
+
+ANA SAYFA (HOME)
+Amaç: Sistemi 5 saniyede anlatmak ve “Arayış Gir” aksiyonuna yönlendirmek
+
+Bileşenler:
+
+Üstte logo: “Emlak Arayış”
+
+Büyük başlık:
+
+“İlan değil, Arayış paylaş”
+
+Alt açıklama:
+
+“Müşteriniz için aradığınız mülkü yazın. Uygun mülkü olan meslektaşlarınız sizinle iletişime geçsin.”
+
+3 ikonlu bilgi:
+
+Üyelik yok
+
+İlan yok
+
+Tek seferlik doğrulama
+
+Ana CTA butonu (sabit alt bar):
+
+Arayış Gir
+
+İkincil link:
+
+“Nasıl Çalışır?”
+
+ARAYIŞ GİR – ADIM 1 (İşlem Türü)
+Amaç: Kullanıcıyı yormadan ilk karar
+
+Bileşenler:
+
+Başlık: “Ne arıyorsunuz?”
+
+Büyük dokunmatik seçim butonları:
+
+Satılık
+
+Kiralık
+
+Tek seçim yapılabilir
+
+Seçim yapılmadan devam edilemez
+
+Alt CTA:
+
+“Devam Et”
+
+ARAYIŞ GİR – ADIM 2 (Gayrimenkul Türü)
+Amaç: Tür seçimini hızlı yapmak
+
+Bileşenler:
+
+Başlık: “Gayrimenkul Türü”
+
+Kart şeklinde dokunmatik butonlar:
+
+Arsa & Tarla
+
+Daire
+
+Villa & Müstakil Ev
+
+Dükkan & Mağaza
+
+Admin tarafından artırılabilir yapı varsayımı
+
+Çoklu seçim yok
+
+Alt CTA:
+
+“Devam Et”
+
+ARAYIŞ GİR – ADIM 3 (Konum)
+Amaç: Lokasyonu hızlı ama esnek girmek
+
+Bileşenler:
+
+İl: Açılır liste (select)
+
+İlçe: Serbest metin (autocomplete yok)
+
+Mahalle: Serbest metin
+
+Placeholder örnekleri:
+
+İlçe: “Kadıköy”
+
+Mahalle: “Fenerbahçe”
+
+Alt CTA:
+
+“Devam Et”
+
+ARAYIŞ GİR – ADIM 4 (Bütçe)
+Amaç: Net ve sade bütçe girişi
+
+Bileşenler:
+
+Tek input alanı
+
+Sadece en yüksek tutar girilir
+
+Otomatik binlik ayırıcı
+
+Kuruş yok (.00 gösterilmez)
+
+Örnek:
+
+5.500.000
+
+TL simgesi input dışında
+
+Alt CTA:
+
+“Devam Et”
+
+ARAYIŞ GİR – ADIM 5 (Detaylar)
+Amaç: Serbest anlatım
+
+Bileşenler:
+
+Textarea: “İstenen Özellikler”
+
+Placeholder: “3+1, balkonlu, otoparklı…”
+
+Textarea: “Özel Not”
+
+Placeholder: “Müşteri taşınmaya hazır…”
+
+Alt CTA:
+
+“Devam Et”
+
+ARAYIŞ GİR – ADIM 6 (Yayın Süresi)
+Amaç: Veri kalabalığını önlemek
+
+Bileşenler:
+
+Başlık: “Bu arayış ne kadar yayında kalsın?”
+
+Dokunmatik seçimler:
+
+3 Gün
+
+7 Gün
+
+14 Gün
+
+Varsayılan: 7 gün
+
+Süre dolunca otomatik pasif
+
+Alt CTA:
+
+“Devam Et”
+
+DOĞRULAMA EKRANI (TEK SEFERLİK)
+Amaç: Kullanıcının emlakçı olduğunu doğrulamak
+
+Bileşenler:
+
+Form alanları:
+
+Ad Soyad
+
+Cep Telefonu
+
+Instagram (opsiyonel)
+
+Açık rıza metni (checkbox):
+
+“Bilgilerimin meslektaşlar tarafından görülmesini kabul ediyorum.”
+
+WhatsApp Butonu:
+
+“WhatsApp’tan Doğrula”
+
+Açıklama metni:
+
+“Bu doğrulama sadece ilk kullanım içindir.”
+
+DOĞRULAMA KODU GİRİŞİ
+Amaç: Admin onayı sonrası erişim
+
+Bileşenler:
+
+4–6 haneli kod girişi
+
+Büyük numeric keypad
+
+CTA:
+
+“Doğrulamayı Tamamla”
+
+BAŞARILI YAYIN EKRANI
+Amaç: Güven ve kontrol hissi
+
+Bileşenler:
+
+Onay ikonu
+
+Metin:
+
+“Arayışınız yayında”
+
+Bilgi:
+
+Yayın süresi geri sayımı
+
+Butonlar:
+
+Arayışı Düzenle
+
+Arayışı Sil
+
+Aktif Arayışlara Git
+
+AKTİF ARAYIŞLAR LİSTESİ
+Amaç: Hızlı tarama ve iletişim
+
+Bileşenler:
+
+Kart bazlı liste
+
+Kart içeriği:
+
+Satılık / Kiralık etiketi
+
+Gayrimenkul türü
+
+İl / İlçe / Mahalle
+
+Bütçe
+
+Kalan süre
+
+Kart CTA:
+
+“İletişime Geç”
+
+Filtreler:
+
+İl
+
+Tür
+
+Satılık / Kiralık
+
+Arama alanı (serbest metin)
+
+ARAYIŞ SAHİBİ KONTROLLERİ
+Amaç: Üyeliksiz kontrol
+
+Bileşenler:
+
+Sadece kendi arayışlarında görünür:
+
+Düzenle
+
+Sil
+
+Yetkisiz erişimde:
+
+“Bu işlem için yetkiniz yok” uyarısı
+
+GENEL UX NOTLARI
+Sticky bottom CTA kullan
+
+Formlar adım adım (stepper)
+
+Her adımda geri butonu
+
+Hata mesajları sade ve Türkçe
+
+Yükleme animasyonları minimal
+
+TON & STİL
+Resmi ama samimi
+
+Emlak sektörüne uygun
+
+Güven veren dil
+
+“İlan” kelimesi özellikle kullanılmaz
+
+ÇIKTI BEKLENTİSİ
+
+Tüm ekranlar için mobil wireframe
+
+Kullanıcı akış diyagramı
+
+Ana CTA’ların net gösterimi
+
+Responsive varyasyon önerileri

@@ -1,0 +1,41 @@
+Aşağıdaki 10 adet “Story” formatlı reklam önerisi, yalnızca emlakçıların ilgisini çekecek şekilde, karakter sınırlarına (başlık ≤ 25, alt metet ≤ 70) ve hikâye akışına göre hazırlanmıştır. Her biri görsel yönlendirme + CTA (emlakarayis.com) içerir.
+
+1)  
+Başlık: Saklı Müşteri Arıyor!  
+Alt metin: Ofisimde 3. kişi yok, komisyonu bölüşmeye hazırım. Hemen eşleş! emlakarayis.com  
+
+2)  
+Başlık: Hemen Teslim Arayan!  
+Alt metin: Banka harici %1 komisyon, sen de kazanç sağla. Eşleşelim! emlakarayis.com  
+
+3)  
+Başlık: Ofisimde 2+1 Arayan Var  
+Alt metin: Kiracısı çıktı, aynı gün eşleşirsek komisyonu yarıya bölüşürüz. emlakarayis.com  
+
+4)  
+Başlık: Yatırımcı Müşterim Bekliyor  
+Alt metin: Günlük kiralık projesi arıyor, stokun varsa hemen yaz! emlakarayis.com  
+
+5)  
+Başlık: Acil Nakit Arayan Aile  
+Alt metin: 450 bin bütçeyle sıfır daire istiyor, stok paylaş, kap komisyonu! emlakarayis.com  
+
+6)  
+Başlık: Boş Duran Tripleksin Var mı?  
+Alt metin: Müşterim havuzlu, denizli, eşyalı arıyor. %2 paylaşırız. emlakarayis.com  
+
+7)  
+Başlık: Tapu Takası Gelsin  
+Alt metin: 1+1’ini verip 2+1’e geçecek müşterim var, karşılık arıyorum. emlakarayis.com  
+
+8)  
+Başlık: Krediye Uygun Müşteri  
+Alt metin: 30 yıl vadeli, 0.79 faizli konut arıyor. Stokun varsa mesaj at! emlakarayis.com  
+
+9)  
+Başlık: Ofisimde Nakit Arayan  
+Alt metin: Şehir dışı yatırımcı, %50 peşin, 2 haftada kapanır. Eşleş! emlakarayis.com  
+
+10)  
+Başlık: Kiracı Değişim Anlaşması  
+Alt metin: 3+1’de boşalma var, benim müşteriye 2+1 göster, çapraz kuralım. emlakarayis.com

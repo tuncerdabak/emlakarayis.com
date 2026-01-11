@@ -1,0 +1,161 @@
+# 🏠 Emlak Arayış - Story Reklam Metinleri
+
+Emlakçılar için hazırladığım, Story formatına (Başlık ≤25, Alt metin ≤70) uygun reklam önerileri:
+
+---
+
+## 1. Hızlı Eşleşme Vurgusu
+
+| Bölüm | Metin |
+|-------|-------|
+| **Başlık** | Müşterini Bul, Komisyonu Al |
+| **Alt Metin** | Portföyün yok ama müşterin var? Meslektaşlarınla eşleş! |
+| **CTA** | emlakarayis.com |
+| **Görsel** | İki emlakçının el sıkıştığı, arada hızlı eşleşme ikonu |
+
+---
+
+## 2. Kayıp Müşteri Teması
+
+| Bölüm | Metin |
+|-------|-------|
+| **Başlık** | Müşteri Buz Gibi Gitmesin |
+| **Alt Metin** | Portföyünde yoksa, emlakarayis.com'da paylaş, anında eşleş! |
+| **CTA** | emlakarayis.com |
+| **Görsel** | Kaçan müşteri görseli yerine, emlakçının cep telefonuna bildirim geliyor |
+
+---
+
+## 3. Komisyon Fırsatı
+
+| Bölüm | Metin |
+|-------|-------|
+| **Başlık** | Portföy Yok, Para Var |
+| **Alt Metin** | Sadece müşteri arayışını paylaş, komisyonu kap! |
+| **CTA** | emlakarayis.com |
+| **Görsel** | Emlakçının eline para simgesi + telefon ekranında eşleşme |
+
+---
+
+## 4. Profesyonel Ağ Vurgusu
+
+| Bölüm | Metin |
+|-------|-------|
+| **Başlık** | 5000+ Emlakçı Bekliyor |
+| **Alt Metin** | Müşteri talebini paylaş, saniyeler içinde eşleşme fırsatı |
+| **CTA** | emlakarayis.com |
+| **Görsel** | Profesyonel emlakçıların birbirine bağlandığı ağ görseli |
+
+---
+
+## 5. Anlık Bildirim
+
+| Bölüm | Metin |
+|-------|-------|
+| **Başlık** | Bildirim: Eşleşme Var! |
+| **Alt Metin** | Müşterini meslektaşına devret, herkes kazansın |
+| **CTA** | emlakarayis.com |
+| **Görsel** | Telefon ekranında "Yeni Eşleşme" bildirimi |
+
+---
+
+## 6. İşbirliği Teması
+
+| Bölüm | Metin |
+|-------|-------|
+| **Başlık** | Rakip Değil, Ortak |
+| **Alt Metin** | Müşteri arayışını paylaş, sektör içi işbirliği başlasın |
+| **CTA** | emlakarayis.com |
+| **Görsel** | İki emlakçının bir arada çalışma sahnesi |
+
+---
+
+## 7. Zaman Tasarrufu
+
+| Bölüm | Metin |
+|-------|-------|
+| **Başlık** | Günlerce Arama Yok |
+| **Alt Metin** | Talebini paylaş, 5 dakikada emlakçı eşleşmesi |
+| **CTA** | emlakarayis.com |
+| **Görsel** | Saat gösteriyor + hızlı eşleşme işareti |
+
+---
+
+## 8. Özel Talep Vurgusu
+
+| Bölüm | Metin |
+|-------|-------|
+| **Başlık** | Özel Müşteri Arıyorum |
+| **Alt Metin** | Nadir talepler için meslektaş ağını kullan |
+| **CTA** | emlakarayis.com |
+| **Görsel** | Emlakçının not alması + özel talep ikonu |
+
+---
+
+## 9. Güvenilirlik Teması
+
+| Bölüm | Metin |
+|-------|-------|
+| **Başlık** | Sadece Emlakçılar İçin |
+| **Alt Metin** | Meslektaşlarınla güvenli eşleşme, şeffaf paylaşım |
+| **CTA** | emlakarayis.com |
+| **Görsel** | Rozet/çekiç simgesi + profesyonel emlakçı ikonu |
+
+---
+
+## 10. Kazanç Odaklı
+
+| Bölüm | Metin |
+|-------|-------|
+| **Başlık** | Portföyüne Ekle, Kazan |
+| **Alt Metin** | Müşteri talebini paylaş, komisyonun garantisinde kal |
+| **CTA** | emlakarayis.com |
+| **Görsel** | Emlakçının portföyüne ek yapıyor + para sembolü |
+
+---
+
+## 11. Bölgesel Eşleşme
+
+| Bölüm | Metin |
+|-------|-------|
+| **Başlık** | Şehrindeki Emlakçıyı Bul |
+| **Alt Metin** | Müşterin için yerel emlakçı anında eşleşsin |
+| **CTA** | emlakarayis.com |
+| **Görsel** | Harita üzerinde pinler + eşleşme çizgileri |
+
+---
+
+## 12. Basit Kullanım
+
+| Bölüm | Metin |
+|-------|-------|
+| **Başlık** | 3 Adımda Eşleşme |
+| **Alt Metin** | Talebi gir, paylaş, eşleş. Bu kadar basit! |
+| **CTA** | emlakarayis.com |
+| **Görsel** | 1-2-3 adım ikonları + tik işaretleri |
+
+---
+
+## Görsel Yönlendirme Önerileri
+
+Her reklam için şu görsel elementleri kullanabilirsiniz:
+
+1. **Renk Paleti**: Lacivert + Turuncu (profesyonel + enerjik)
+2. **İkonlar**: Emlak rozeti, el sıkışma, bildirim simgesi, ağ/bağlantı
+3. **Tipografi**: Bold başlıklar, okunabilir alt metinler
+4. **Format**: 9:16 (Story için ideal)
+5. **Brand**: Logoyu sol üstte, CTA'yı altta buton olarak
+
+---
+
+## A/B Test İçin Gruplandırma
+
+| Grup A (Hız Odaklı) | Grup B (Kazanç Odaklı) | Grup C (Topluluk Odaklı) |
+|---------------------|------------------------|--------------------------|
+| Reklam #1 | Reklam #3 | Reklam #6 |
+| Reklam #5 | Reklam #10 | Reklam #4 |
+| Reklam #7 | Reklam #9 | Reklam #11 |
+
+---
+
+Görsel tasarım desteği gerekiyor mu? Ayrıca spesifik bir kampanya dönemi veya hedef bölge belirtirseniz daha özelleştirilmiş metinler üretebilirim.

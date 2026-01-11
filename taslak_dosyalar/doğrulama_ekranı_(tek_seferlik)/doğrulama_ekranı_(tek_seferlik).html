@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html class="light" lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>EmlakAsistanı - Doğrulama</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased text-[#0d121b] dark:text-white flex flex-col min-h-screen">
+<!-- Top Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[#e7ebf3] dark:border-[#2a3140] px-6 lg:px-40 py-3 bg-white dark:bg-[#1a202c]">
+<div class="flex items-center gap-4 text-[#0d121b] dark:text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined text-2xl">real_estate_agent</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">EmlakAsistanı</h2>
+</div>
+<div class="flex gap-2">
+<div class="flex items-center gap-2 text-sm font-medium text-[#4c669a] dark:text-[#94a3b8]">
+<span class="material-symbols-outlined text-base">lock</span>
+<span>Güvenli Bağlantı</span>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex items-center justify-center p-4">
+<div class="w-full max-w-[480px]">
+<!-- Card Container -->
+<div class="bg-white dark:bg-[#1a202c] rounded-xl shadow-sm border border-[#e7ebf3] dark:border-[#2a3140] overflow-hidden">
+<!-- Decorative Top Bar -->
+<div class="h-2 w-full bg-primary"></div>
+<div class="p-8">
+<!-- Header Section -->
+<div class="flex flex-col items-center text-center gap-3 mb-8">
+<div class="size-14 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h1 class="text-2xl font-bold text-[#0d121b] dark:text-white">Kimliğinizi Doğrulayın</h1>
+<p class="text-[#4c669a] dark:text-[#94a3b8] text-sm leading-relaxed max-w-[320px]">
+                            Platform güvenliği için lütfen bilgilerinizi doğrulayın. Bu işlem sadece bir kez yapılacaktır.
+                        </p>
+</div>
+<!-- Form Section -->
+<form class="flex flex-col gap-5">
+<!-- Ad Soyad Input -->
+<div class="flex flex-col gap-2">
+<label class="text-[#0d121b] dark:text-white text-sm font-medium leading-normal">Ad Soyad</label>
+<div class="relative">
+<input class="form-input w-full rounded-lg border border-[#cfd7e7] dark:border-[#4a5568] bg-[#f8f9fc] dark:bg-[#2d3748] h-12 px-4 pl-11 text-base text-[#0d121b] dark:text-white placeholder:text-[#4c669a] dark:placeholder:text-[#718096] focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="Örn: Ahmet Yılmaz" type="text"/>
+<div class="absolute left-3 top-1/2 -translate-y-1/2 text-[#4c669a] dark:text-[#718096] pointer-events-none flex items-center">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+</div>
+</div>
+<!-- Cep Telefonu Input -->
+<div class="flex flex-col gap-2">
+<label class="text-[#0d121b] dark:text-white text-sm font-medium leading-normal">Cep Telefonu</label>
+<div class="relative">
+<input class="form-input w-full rounded-lg border border-[#cfd7e7] dark:border-[#4a5568] bg-[#f8f9fc] dark:bg-[#2d3748] h-12 px-4 pl-11 text-base text-[#0d121b] dark:text-white placeholder:text-[#4c669a] dark:placeholder:text-[#718096] focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="5XX XXX XX XX" type="tel"/>
+<div class="absolute left-3 top-1/2 -translate-y-1/2 text-[#4c669a] dark:text-[#718096] pointer-events-none flex items-center">
+<span class="material-symbols-outlined text-[20px]">smartphone</span>
+</div>
+</div>
+</div>
+<!-- Instagram Input (Optional) -->
+<div class="flex flex-col gap-2">
+<div class="flex justify-between items-center">
+<label class="text-[#0d121b] dark:text-white text-sm font-medium leading-normal">Instagram</label>
+<span class="text-xs text-[#4c669a] dark:text-[#718096] font-normal">Opsiyonel</span>
+</div>
+<div class="relative flex items-center">
+<div class="absolute left-3 top-1/2 -translate-y-1/2 text-[#4c669a] dark:text-[#718096] pointer-events-none flex items-center">
+<span class="text-lg font-bold">@</span>
+</div>
+<input class="form-input w-full rounded-lg border border-[#cfd7e7] dark:border-[#4a5568] bg-[#f8f9fc] dark:bg-[#2d3748] h-12 px-4 pl-9 text-base text-[#0d121b] dark:text-white placeholder:text-[#4c669a] dark:placeholder:text-[#718096] focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all" placeholder="kullaniciadi" type="text"/>
+</div>
+</div>
+<!-- Consent Checkbox -->
+<div class="flex items-start gap-3 mt-1">
+<div class="relative flex items-center">
+<input class="peer size-5 cursor-pointer appearance-none rounded border border-[#cfd7e7] dark:border-[#4a5568] bg-white dark:bg-[#2d3748] checked:border-primary checked:bg-primary transition-all" id="consent" type="checkbox"/>
+<span class="material-symbols-outlined pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-base text-white opacity-0 peer-checked:opacity-100">check</span>
+</div>
+<label class="text-sm text-[#4c669a] dark:text-[#94a3b8] cursor-pointer select-none leading-snug" for="consent">
+                                Bilgilerimin meslektaşlar tarafından görülmesini kabul ediyorum.
+                            </label>
+</div>
+<!-- Submit Button -->
+<button class="mt-2 flex w-full cursor-pointer items-center justify-center gap-2 overflow-hidden rounded-lg bg-[#25D366] hover:bg-[#20bd5a] text-white h-12 px-6 text-sm font-bold leading-normal tracking-[0.015em] transition-colors shadow-[0_2px_4px_rgba(37,211,102,0.2)]" type="button">
+<!-- WhatsApp like icon using Material Symbols as requested -->
+<span class="material-symbols-outlined">chat</span>
+<span class="truncate">WhatsApp'tan Doğrula</span>
+</button>
+</form>
+</div>
+<!-- Footer area of card -->
+<div class="bg-[#f8f9fc] dark:bg-[#2d3748]/30 px-8 py-4 text-center border-t border-[#e7ebf3] dark:border-[#2a3140]">
+<p class="text-xs text-[#4c669a] dark:text-[#94a3b8]">
+                        Yardıma mı ihtiyacınız var? <a class="text-primary hover:underline font-medium" href="#">Destek ekibine ulaşın</a>
+</p>
+</div>
+</div>
+<!-- Bottom Trust Indication -->
+<div class="mt-6 flex justify-center gap-6">
+<div class="flex items-center gap-2 opacity-60 grayscale hover:grayscale-0 transition-all duration-300">
+<div class="h-6 w-auto flex items-center text-xs font-bold text-[#4c669a] dark:text-[#94a3b8] gap-1">
+<span class="material-symbols-outlined text-lg">shield</span>
+<span>256-Bit SSL</span>
+</div>
+</div>
+<div class="flex items-center gap-2 opacity-60 grayscale hover:grayscale-0 transition-all duration-300">
+<div class="h-6 w-auto flex items-center text-xs font-bold text-[#4c669a] dark:text-[#94a3b8] gap-1">
+<span class="material-symbols-outlined text-lg">verified</span>
+<span>Doğrulanmış Hesap</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

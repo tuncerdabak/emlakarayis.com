@@ -1,0 +1,4 @@
+RewriteEngine On
+
+# Sitemap redirect
+RewriteRule ^sitemap\.xml$ sitemap.php [L]

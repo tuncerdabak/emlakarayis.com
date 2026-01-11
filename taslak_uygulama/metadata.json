@@ -1,0 +1,7 @@
+{
+  "name": "Emlak Arayış",
+  "description": "Emlakçılar için ilan girmeden müşteri taleplerini paylaşma ve hızlı eşleşme platformu. Kayıt gerektirmez, tamamen ücretsiz.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

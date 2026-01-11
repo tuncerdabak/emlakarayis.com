@@ -1,0 +1,9 @@
+*.gdoc
+*.gsheet
+*.gslides
+*.zip
+*.rar
+.DS_Store
+Thumbs.db
+node_modules/
+.env

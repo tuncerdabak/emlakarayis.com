@@ -1,0 +1,39 @@
+### Instagram Story Reklam Önerileri
+
+#### Öneri 1: Hızlı Eşleşme Hikâyesi
+**Başlık:** Müşteri mi arıyorsun?  
+**Alt Metin:** Meslektaşın tam aradığın talebi paylaştı! Eşleş ve kazan.  
+**Görsel Yönlendirme:** İki emlakçı el sıkışırken ekranında talep kartı beliriyor.  
+**CTA:** emlakarayis.com'a swipe up!
+
+#### Öneri 2: Talep Paylaşımı
+**Başlık:** Talebini paylaş!  
+**Alt Metin:** İlan yayınlama, meslektaşına ilet. Hızlı eşleşme bekliyor.  
+**Görsel Yönlendirme:** Telefon ekranında talep yazma arayüzü, arkasında ev silüeti.  
+**CTA:** Şimdi emlakarayis.com!
+
+#### Öneri 3: Eşleşme Başarısı
+**Başlık:** Eşleştik, sattık!  
+**Alt Metin:** Dün paylaştığın talep bugün eşleşti. Senin sıran ne?  
+**Görsel Yönlendirme:** Yeşil "Eşleşti!" tik işaretiyle emlakçı gülümsüyor.  
+**CTA:** emlakarayis.com'a gel!
+
+#### Öneri 4: Zaman Kazanma
+**Başlık:** Zamanını boşa harcama  
+**Alt Metin:** Müşteri arayışını paylaş, emlakçılar eşleşsin. Kolay!  
+**Görsel Yönlendirme:** Saat akrebi hızlanırken talep paylaşım animasyonu.  
+**CTA:** emlakarayis.com keşfet!
+
+#### Öneri 5: Profesyonel Ağ
+**Başlık:** Emlakçı ağına katıl  
+**Alt Metin:** Taleplerini meslektaşlarınla eşleştir. Rekor satışlar seni bekler.  
+**Görsel Yönlendirme:** Ağ haritası üzerinde talep pin'leri bağlanıyor.  
+**CTA:** Hemen emlakarayis.com!
+
+#### Öneri 6: Günlük Talep
+**Başlık:** Bugünkü talebin?  
+**Alt Metin:** Paylaş, emlakçılar arasından en uygunu bulsun. Hızlı çözüm!  
+**Görsel Yönlendirme:** Takvimde "Talep" notu, eşleşme okuyla bağlanıyor.  
+**CTA:** emlakarayis.com'a tıkla!
+
+Bu öneriler, emlakçıların günlük ağrı noktalarına (zaman kaybı, eşleşme zorluğu) odaklanarak hikâye formatında tasarlandı. Her biri başlık ≤25, alt metin ≤70 karakter. Reklam seti için A/B testi öneririm!

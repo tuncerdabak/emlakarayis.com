@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Arayış Gir - Yayın Süresi</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#135bec",
+                        "background-light": "#f8f9fc",
+                        "background-dark": "#101622",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2130",
+                        "border-light": "#e7ebf3",
+                        "border-dark": "#2a3441",
+                        "text-main-light": "#0d121b",
+                        "text-main-dark": "#ffffff",
+                        "text-sub-light": "#4c669a",
+                        "text-sub-dark": "#94a3b8",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem", 
+                        "lg": "0.5rem", 
+                        "xl": "0.75rem", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom radio button styling overrides */
+        input[type="radio"]:checked + div {
+            border-color: #135bec;
+            background-color: rgba(19, 91, 236, 0.05);
+        }
+        input[type="radio"]:checked + div .radio-circle-inner {
+            transform: scale(1);
+        }
+        input[type="radio"]:checked + div .radio-circle {
+            border-color: #135bec;
+        }
+        
+        /* Smooth transitions */
+        .transition-all {
+            transition-property: all;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 200ms;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased min-h-screen flex flex-col transition-colors duration-200">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 w-full border-b border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark transition-colors duration-200">
+<div class="px-4 md:px-10 py-3 flex items-center justify-between max-w-7xl mx-auto">
+<div class="flex items-center gap-4 text-text-main-light dark:text-text-main-dark">
+<!-- Close Button (Simulated as Back for logic, or Close wizard) -->
+<button class="p-2 -ml-2 rounded-full hover:bg-background-light dark:hover:bg-background-dark transition-colors">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Arayış Gir</h2>
+</div>
+<button class="flex items-center justify-center rounded-lg h-9 bg-background-light dark:bg-background-dark text-text-sub-light dark:text-text-sub-dark hover:text-primary transition-colors px-3 text-sm font-bold gap-2">
+<span class="material-symbols-outlined text-[20px]">help</span>
+<span class="hidden sm:inline">Yardım</span>
+</button>
+</div>
+</header>
+<!-- Main Content Container -->
+<main class="flex-1 flex justify-center py-6 sm:py-10 px-4 sm:px-6 w-full">
+<div class="flex flex-col max-w-[640px] w-full gap-8">
+<!-- Progress Bar Section -->
+<div class="flex flex-col gap-3">
+<div class="flex gap-6 justify-between items-end">
+<p class="text-text-main-light dark:text-text-main-dark text-base font-medium leading-normal">Adım 6/7</p>
+<p class="text-text-sub-light dark:text-text-sub-dark text-sm font-normal leading-normal">%85 Tamamlandı</p>
+</div>
+<div class="h-2 w-full bg-border-light dark:bg-border-dark rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500 ease-out" style="width: 85%;"></div>
+</div>
+</div>
+<!-- Content Body -->
+<div class="flex flex-col gap-6">
+<!-- Headline & Description -->
+<div class="text-center sm:text-left">
+<h1 class="text-text-main-light dark:text-text-main-dark tracking-tight text-2xl sm:text-[32px] font-bold leading-tight mb-3">
+                        Bu arayış ne kadar yayında kalsın?
+                    </h1>
+<p class="text-text-sub-light dark:text-text-sub-dark text-base font-normal leading-relaxed">
+                        Veri kirliliğini önlemek adına, seçilen süre dolduğunda arayışınız otomatik olarak pasife alınacaktır. Süre bitiminden önce bildirim alacaksınız.
+                    </p>
+</div>
+<!-- Radio Selection Cards -->
+<div aria-labelledby="duration-label" class="flex flex-col gap-3 mt-2" role="radiogroup">
+<!-- Option 1: 3 Days -->
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="duration" type="radio" value="3"/>
+<div class="flex items-center gap-4 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-4 sm:p-5 transition-all hover:border-primary/50 dark:hover:border-primary/50 shadow-sm hover:shadow-md">
+<!-- Custom Radio Circle -->
+<div class="radio-circle flex-shrink-0 size-6 rounded-full border-2 border-border-light dark:border-text-sub-dark flex items-center justify-center transition-colors">
+<div class="radio-circle-inner size-2.5 rounded-full bg-primary transform scale-0 transition-transform duration-200"></div>
+</div>
+<div class="flex grow flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+<div class="flex flex-col">
+<span class="text-text-main-light dark:text-text-main-dark text-base font-bold leading-normal group-hover:text-primary transition-colors">3 Gün (Hızlı Arayış)</span>
+<span class="text-text-sub-light dark:text-text-sub-dark text-sm font-normal">Acil durumlar için ideal</span>
+</div>
+<div class="flex items-center gap-1.5 text-text-sub-light dark:text-text-sub-dark bg-background-light dark:bg-background-dark px-2 py-1 rounded text-xs font-medium w-fit">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span>28 Ekim'de biter</span>
+</div>
+</div>
+</div>
+</label>
+<!-- Option 2: 7 Days (Default) -->
+<label class="relative cursor-pointer group">
+<input checked="" class="peer sr-only" name="duration" type="radio" value="7"/>
+<div class="flex items-center gap-4 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-4 sm:p-5 transition-all hover:border-primary/50 dark:hover:border-primary/50 shadow-sm hover:shadow-md">
+<!-- Custom Radio Circle -->
+<div class="radio-circle flex-shrink-0 size-6 rounded-full border-2 border-border-light dark:border-text-sub-dark flex items-center justify-center transition-colors">
+<div class="radio-circle-inner size-2.5 rounded-full bg-primary transform scale-0 transition-transform duration-200"></div>
+</div>
+<div class="flex grow flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<span class="text-text-main-light dark:text-text-main-dark text-base font-bold leading-normal group-hover:text-primary transition-colors">7 Gün (Standart)</span>
+<span class="bg-primary/10 text-primary text-[10px] uppercase font-bold px-1.5 py-0.5 rounded">Önerilen</span>
+</div>
+<span class="text-text-sub-light dark:text-text-sub-dark text-sm font-normal">Genel piyasa ortalaması</span>
+</div>
+<div class="flex items-center gap-1.5 text-text-sub-light dark:text-text-sub-dark bg-background-light dark:bg-background-dark px-2 py-1 rounded text-xs font-medium w-fit">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span>1 Kasım'da biter</span>
+</div>
+</div>
+</div>
+</label>
+<!-- Option 3: 14 Days -->
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="duration" type="radio" value="14"/>
+<div class="flex items-center gap-4 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-4 sm:p-5 transition-all hover:border-primary/50 dark:hover:border-primary/50 shadow-sm hover:shadow-md">
+<!-- Custom Radio Circle -->
+<div class="radio-circle flex-shrink-0 size-6 rounded-full border-2 border-border-light dark:border-text-sub-dark flex items-center justify-center transition-colors">
+<div class="radio-circle-inner size-2.5 rounded-full bg-primary transform scale-0 transition-transform duration-200"></div>
+</div>
+<div class="flex grow flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+<div class="flex flex-col">
+<span class="text-text-main-light dark:text-text-main-dark text-base font-bold leading-normal group-hover:text-primary transition-colors">14 Gün (Uzun Vadeli)</span>
+<span class="text-text-sub-light dark:text-text-sub-dark text-sm font-normal">Niş portföyler için</span>
+</div>
+<div class="flex items-center gap-1.5 text-text-sub-light dark:text-text-sub-dark bg-background-light dark:bg-background-dark px-2 py-1 rounded text-xs font-medium w-fit">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span>8 Kasım'da biter</span>
+</div>
+</div>
+</div>
+</label>
+</div>
+</div>
+<!-- Footer / Action Buttons -->
+<div class="flex items-center justify-between pt-6 mt-auto sm:mt-8 border-t border-border-light dark:border-border-dark">
+<button class="flex items-center justify-center h-12 px-6 rounded-lg text-text-main-light dark:text-text-main-dark font-medium hover:bg-black/5 dark:hover:bg-white/5 transition-colors">
+                    Geri
+                </button>
+<button class="flex items-center justify-center h-12 px-8 rounded-lg bg-primary text-white font-bold text-sm hover:bg-blue-600 transition-colors shadow-lg shadow-blue-500/20 w-full sm:w-auto">
+                    Devam Et
+                </button>
+</div>
+</div>
+</main>
+</body></html>
