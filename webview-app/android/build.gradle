@@ -12,6 +12,14 @@ subprojects {
     project.evaluationDependsOn(':app')
 }
 
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://storage.googleapis.com/download.flutter.io' }
+    }
+}
+
 tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
