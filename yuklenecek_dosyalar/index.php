@@ -11,6 +11,29 @@ $latestSearches = getActiveSearches($pdo, 6);
 
 <!-- Hero Section -->
 <section class="relative pt-12 pb-20 lg:pt-24 lg:pb-32 overflow-hidden bg-white">
+    <!-- App Download Banner (Mobile Only) -->
+    <div class="md:hidden mb-8 px-4">
+        <div
+            class="bg-gradient-to-r from-[#1A365D] to-[#2C5282] rounded-2xl p-4 flex items-center justify-between shadow-lg shadow-blue-900/20 text-white relative overflow-hidden">
+            <!-- Deco -->
+            <div class="absolute -right-6 top-1/2 -translate-y-1/2 w-24 h-24 bg-white/10 rounded-full blur-2xl"></div>
+
+            <div class="flex items-center gap-4 relative z-10">
+                <div
+                    class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center backdrop-blur-sm shrink-0">
+                    <span class="material-symbols-outlined text-2xl">android</span>
+                </div>
+                <div>
+                    <h3 class="font-bold text-sm">Mobil Uygulama Yayında!</h3>
+                    <p class="text-xs text-blue-200">Daha hızlı ve pratik kullanım.</p>
+                </div>
+            </div>
+            <a href="indir.php"
+                class="bg-white text-[#1A365D] px-4 py-2 rounded-lg text-xs font-bold hover:bg-blue-50 transition-colors shrink-0 shadow-sm relative z-10">
+                İndir
+            </a>
+        </div>
+    </div>
     <!-- Background Blobs -->
     <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full overflow-hidden -z-10 pointer-events-none">
         <div

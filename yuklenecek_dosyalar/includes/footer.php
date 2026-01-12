@@ -88,24 +88,7 @@
     </div>
 </footer>
 
-<!-- Sticky Bottom Bar (Mobile) -->
-<div
-    class="fixed bottom-0 left-0 w-full bg-white/95 backdrop-blur-lg border-t border-gray-200 p-4 z-50 shadow-[0_-4px_12px_rgba(0,0,0,0.08)] md:hidden">
-    <div class="max-w-lg mx-auto flex items-center justify-center gap-4">
-        <a href="#nasil-calisir"
-            class="flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-secondary transition-colors">
-            <span class="material-symbols-outlined text-lg">help</span>
-        </a>
-        <a href="talep-gir.php"
-            class="flex-1 h-12 bg-secondary hover:bg-primary text-white rounded-xl font-bold text-base shadow-lg shadow-secondary/30 transition-all flex items-center justify-center gap-2 hover:-translate-y-0.5 active:translate-y-0">
-            <span class="material-symbols-outlined">add_circle</span>
-            Hemen Talep Gir
-        </a>
-    </div>
-</div>
 
-<!-- Spacer for sticky bottom bar on mobile -->
-<div class="h-20 md:hidden"></div>
 
 <!-- Custom JavaScript -->
 <script src="assets/js/app.js"></script>
