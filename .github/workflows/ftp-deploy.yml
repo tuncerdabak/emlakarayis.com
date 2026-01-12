@@ -19,7 +19,7 @@ jobs:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: public_html/emlakarayis.com/
+        server-dir: ./ # FTP kullanıcısı zaten bu klasörde başladığı için ./ yapıyoruz.
         exclude: |
           **/.git*
           **/.git*/**
