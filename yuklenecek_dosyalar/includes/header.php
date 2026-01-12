@@ -9,6 +9,9 @@ if (!defined('SITE_NAME')) {
 }
 require_once __DIR__ . '/functions.php';
 
+// Geçerli sayfayı belirle (eğer önceden tanımlanmamışsa)
+$current_page = $current_page ?? basename($_SERVER['PHP_SELF']);
+
 // Sayfa başlığı ve SEO Ayarları
 if ($current_page === 'arayislar.php' && isset($_GET['id'])) {
     // Tekil arayış sayfası için dinamik SEO
