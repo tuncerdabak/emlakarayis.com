@@ -20,6 +20,7 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: ./ # FTP kullanıcısı zaten bu klasörde başladığı için ./ yapıyoruz.
+        local-dir: yuklenecek_dosyalar/
         exclude: |
           **/.git*
           **/.git*/**
