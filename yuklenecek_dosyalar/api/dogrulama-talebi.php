@@ -37,9 +37,9 @@ try {
         $sql = "INSERT INTO users (phone, agent_name, agency_name, instagram, is_verified, is_active) VALUES (?, ?, ?, ?, 1, 1)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([$phone, $name, $agency, $instagram]);
-        
+
         $userId = $pdo->lastInsertId();
-        
+
         // Kullanıcıyı tekrar çek (ID ve diğer bilgiler için)
         $stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");
         $stmt->execute([$userId]);
@@ -57,6 +57,10 @@ try {
     $_SESSION['user_name'] = $name;
     $_SESSION['verified'] = true;
 
+    // Yeni kayıt mı yoksa mevcut kullanıcı mı?
+    // Eğer şifresi yoksa veya yeni açılmışsa profilini güncellemesi için profil sayfasına yönlendirelim
+    $redirectUrl = empty($user['password']) || (isset($userId)) ? 'profil.php' : 'talep-gir.php';
+
     // Her ihtimale karşı doğrulama talebi de sisteme düşsün (admin izleyebilsin)
     $verificationCode = "AUTO"; // Otomatik doğrulandığını belirtir
     $sql = "INSERT INTO verification_requests (phone, agent_name, agency_name, instagram, verification_code, status) VALUES (?, ?, ?, ?, ?, 'approved')";
@@ -64,9 +68,9 @@ try {
     $stmt->execute([$phone, $name, $agency, $instagram, $verificationCode]);
 
     jsonResponse([
-        'success' => true, 
+        'success' => true,
         'message' => 'Kayıt başarılı, yönlendiriliyorsunuz...',
-        'redirect' => 'talep-gir.php'
+        'redirect' => $redirectUrl
     ]);
 
 } catch (PDOException $e) {
