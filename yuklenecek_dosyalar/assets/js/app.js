@@ -1,21 +1,8 @@
 const app = {
     // Initialize
     init() {
-        this.setupForms();
-    },
-
-    // Form Handling Setup
-    setupForms() {
-        const verifyForm = document.getElementById('verifyForm');
-        const codeForm = document.getElementById('codeForm');
-        
-        if (verifyForm) {
-            verifyForm.addEventListener('submit', this.handleVerificationRequest);
-        }
-        
-        if (codeForm) {
-            codeForm.addEventListener('submit', this.handleCodeVerification);
-        }
+        // Form handling is now managed locally in pages for better control
+        // this.setupForms(); 
     },
 
     // Handle initial verification request (send data -> get whatsapp link)
@@ -25,7 +12,7 @@ const app = {
         const originalText = btn.innerHTML;
         const formData = new FormData(e.target);
         const phone = formData.get('phone');
-        
+
         // Save phone for next step
         document.getElementById('codePhone').value = phone; // formatPhone needed? backend handles it.
 
@@ -43,7 +30,7 @@ const app = {
             if (result.success) {
                 // Open WhatsApp
                 window.open(result.whatsappUrl, '_blank');
-                
+
                 // Show Step 2
                 showStep('step-code');
             } else {
