@@ -1,7 +1,7 @@
 <?php
 /**
  * Emlak Arayış - Giriş Sayfası
- * OTP veya Şifre ile giriş
+ * Hızlı Giriş veya Şifre ile giriş
  */
 require_once 'config.php';
 require_once 'includes/functions.php';
@@ -27,8 +27,8 @@ require_once 'includes/header.php';
             <button type="button" id="tab-otp"
                 class="flex-1 py-4 text-center font-semibold text-primary border-b-2 border-primary transition-all"
                 onclick="switchTab('otp')">
-                <span class="material-symbols-outlined text-sm align-middle mr-1">sms</span>
-                OTP ile Giriş
+                <span class="material-symbols-outlined text-sm align-middle mr-1">bolt</span>
+                Hızlı Giriş
             </button>
             <button type="button" id="tab-password"
                 class="flex-1 py-4 text-center font-semibold text-gray-400 border-b-2 border-transparent hover:text-gray-600 transition-all"
@@ -45,7 +45,7 @@ require_once 'includes/header.php';
                     class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4 text-secondary">
                     <span class="material-symbols-outlined text-3xl">verified_user</span>
                 </div>
-                <h1 class="text-2xl font-bold text-gray-900">Doğrulama Talebi</h1>
+                <h1 class="text-2xl font-bold text-gray-900">Hızlı Giriş / Kayıt</h1>
                 <p class="text-gray-500 text-sm mt-2">Güvenli bir ağ için sadece doğrulanan emlak danışmanları arayış
                     paylaşabilir.</p>
             </div>
@@ -97,8 +97,8 @@ require_once 'includes/header.php';
 
                 <button type="submit"
                     class="w-full py-3.5 bg-primary hover:bg-primary-dark text-white rounded-xl font-bold shadow-lg shadow-primary/20 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
-                    <span class="material-symbols-outlined">send</span>
-                    Doğrulama Kodu Talep Et
+                    <span class="material-symbols-outlined">login</span>
+                    Giriş Yap / Kayıt Ol
                 </button>
 
                 <div class="text-center pt-2">
@@ -210,7 +210,7 @@ require_once 'includes/header.php';
                         Şifreniz yok mu?
                         <button type="button" onclick="switchTab('otp')"
                             class="text-secondary font-semibold hover:underline">
-                            OTP ile giriş yapın
+                            Hızlı giriş yapın
                         </button>
                     </p>
                 </div>
