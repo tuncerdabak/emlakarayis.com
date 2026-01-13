@@ -55,7 +55,7 @@
                         </a>
                     </li>
                     <li class="pt-2">
-                        <a href="<?= whatsappLink(ADMIN_WHATSAPP, 'Merhaba, emlakarayis.com üzerinden bilgi almak istiyorum.') ?>"
+                        <a href="<?= whatsappLink(ADMIN_WHATSAPP, 'Merhaba, emlakarayis.com üzerinden bilgi / yardım almak istiyorum.') ?>"
                             target="_blank"
                             class="inline-flex items-center gap-2 px-4 py-2 bg-[#25D366] hover:bg-[#128C7E] text-white rounded-lg font-bold text-sm transition-all shadow-lg shadow-green-900/20">
                             <i class="fab fa-whatsapp text-lg"></i>
