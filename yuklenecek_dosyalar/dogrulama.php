@@ -11,6 +11,11 @@ if (isUserVerified()) {
     exit;
 }
 
+// Basitleştirilmiş kayıt akışı gereği artık ayrı bir doğrulama sayfası gerekmiyor.
+// Kullanıcıları giriş (kayıt) sayfasına yönlendirelim.
+header('Location: giris.php');
+exit;
+
 $pageTitle = 'Doğrulama';
 require_once 'includes/header.php';
 ?>

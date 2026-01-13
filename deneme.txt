@@ -1,3 +1,0 @@
-Bu bir test dosyasıdır. FTP deploy işleminin başarılı olup olmadığını kontrol etmek için oluşturulmuştur.
-Tarih: 12.01.2026 13:43
-Antigravity tarafından oluşturuldu.

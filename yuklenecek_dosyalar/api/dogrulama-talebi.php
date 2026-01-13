@@ -27,34 +27,48 @@ if (empty($name) || empty($phone)) {
 }
 
 try {
-    // Önce kullanıcı users tablosunda var mı bak (daha önce doğrulanmış mı?)
-    $stmt = $pdo->prepare("SELECT id, is_verified FROM users WHERE phone = ?");
+    // Kullanıcı var mı bak
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE phone = ?");
     $stmt->execute([$phone]);
-    $existingUser = $stmt->fetch();
+    $user = $stmt->fetch();
 
-    if ($existingUser && $existingUser['is_verified']) {
-        // Zaten doğrulanmış, direkt oturum açılabilir ama burada akış gereği kullanıcıyı uyarmak yerine
-        // belki direkt kod göndermek mantıklı olabilir. 
-        // Şimdilik yeni talep oluşturmayalım, admin panelinde karışıklık olmasın.
-        // Kullanıcıya "Zaten kayıtlısınız, giriş ekranından devam edin" diyebilirdik ama burada talep oluşturuyoruz.
+    if (!$user) {
+        // Yeni kullanıcı oluştur (Direkt doğrulanmış olarak)
+        $sql = "INSERT INTO users (phone, agent_name, agency_name, instagram, is_verified, is_active) VALUES (?, ?, ?, ?, 1, 1)";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([$phone, $name, $agency, $instagram]);
+        
+        $userId = $pdo->lastInsertId();
+        
+        // Kullanıcıyı tekrar çek (ID ve diğer bilgiler için)
+        $stmt = $pdo->prepare("SELECT * FROM users WHERE id = ?");
+        $stmt->execute([$userId]);
+        $user = $stmt->fetch();
+    } else {
+        // Mevcut kullanıcıyı güncelle (belki adı değişmiştir) ve doğrula
+        $sql = "UPDATE users SET agent_name = ?, agency_name = ?, instagram = ?, is_verified = 1, is_active = 1 WHERE id = ?";
+        $stmt = $pdo->prepare($sql);
+        $stmt->execute([$name, $agency, $instagram, $user['id']]);
     }
 
-    // Doğrulama kodu üret
-    $verificationCode = generateVerificationCode();
+    // Oturum Aç (Login)
+    $_SESSION['user_id'] = $user['id'];
+    $_SESSION['user_phone'] = $user['phone'];
+    $_SESSION['user_name'] = $name;
+    $_SESSION['verified'] = true;
 
-    // Talebi kaydet
-    $sql = "INSERT INTO verification_requests (phone, agent_name, agency_name, instagram, verification_code) VALUES (?, ?, ?, ?, ?)";
+    // Her ihtimale karşı doğrulama talebi de sisteme düşsün (admin izleyebilsin)
+    $verificationCode = "AUTO"; // Otomatik doğrulandığını belirtir
+    $sql = "INSERT INTO verification_requests (phone, agent_name, agency_name, instagram, verification_code, status) VALUES (?, ?, ?, ?, ?, 'approved')";
     $stmt = $pdo->prepare($sql);
     $stmt->execute([$phone, $name, $agency, $instagram, $verificationCode]);
 
-    // Admin için WhatsApp mesajı oluştur
-    $message = adminVerificationMessage($name, $phone, $agency, $instagram, $verificationCode);
-
-    // WhatsApp linki döndür
-    $whatsappUrl = whatsappLink(ADMIN_WHATSAPP, $message);
-
-    jsonResponse(['success' => true, 'whatsappUrl' => $whatsappUrl]);
+    jsonResponse([
+        'success' => true, 
+        'message' => 'Kayıt başarılı, yönlendiriliyorsunuz...',
+        'redirect' => 'talep-gir.php'
+    ]);
 
 } catch (PDOException $e) {
-    jsonResponse(['success' => false, 'message' => 'Veritabanı hatası'], 500);
+    jsonResponse(['success' => false, 'message' => 'Veritabanı hatası: ' . $e->getMessage()], 500);
 }

@@ -300,12 +300,19 @@ require_once 'includes/header.php';
                 method: 'POST',
                 body: formData
             });
+            const response = await fetch('api/dogrulama-talebi.php', {
+                method: 'POST',
+                body: formData
+            });
             const result = await response.json();
 
             if (result.success) {
-                document.getElementById('codePhone').value = formData.get('phone');
-                showCodeEntry();
-                alert('Doğrulama kodu WhatsApp\'tan gönderildi!');
+                // Yeni akış: Direkt yönlendirme
+                if (result.redirect) {
+                    window.location.href = result.redirect;
+                } else {
+                    window.location.href = 'talep-gir.php';
+                }
             } else {
                 alert('Hata: ' + result.message);
             }
