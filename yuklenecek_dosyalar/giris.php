@@ -300,10 +300,6 @@ require_once 'includes/header.php';
                 method: 'POST',
                 body: formData
             });
-            const response = await fetch('api/dogrulama-talebi.php', {
-                method: 'POST',
-                body: formData
-            });
             const result = await response.json();
 
             if (result.success) {
@@ -321,7 +317,7 @@ require_once 'includes/header.php';
         }
 
         btn.disabled = false;
-        btn.innerHTML = '<span class="material-symbols-outlined">send</span> Doğrulama Kodu Talep Et';
+        btn.innerHTML = '<span class="material-symbols-outlined">login</span> Giriş Yap / Kayıt Ol';
     });
 
     // Code Verification Form
