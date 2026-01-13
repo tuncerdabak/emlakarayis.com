@@ -1,10 +1,11 @@
+<?php
 require_once 'config.php';
 require_once 'includes/functions.php';
 
 // Eğer kullanıcı zaten doğrulanmışsa Keşfet sayfasına yönlendir
 if (isUserVerified()) {
-header('Location: arayislar.php');
-exit;
+    header('Location: arayislar.php');
+    exit;
 }
 
 $pageTitle = 'Müşteriniz Hazır ise, Portföyü Meslektaşınızdan Bulun';
